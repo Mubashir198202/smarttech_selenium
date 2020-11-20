@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="zoopla.uk.myrunner.MyRunner">
+      <class name="com.us.testng.Test3">
         <methods>
-          <include name="setUpClass"/>
-          <include name="feature" invocation-numbers="0"/>
-          <include name="tearDownClass"/>
+          <include name="testCaseThree"/>
         </methods>
-      </class> <!-- zoopla.uk.myrunner.MyRunner -->
+      </class> <!-- com.us.testng.Test3 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

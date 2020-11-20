@@ -27,10 +27,26 @@ public WebElement getAcceptCookis() {
 public WebElement getClickSignInButton() {
 	return clickSignInButton;
 }
-  
-  
-  
-  
+@FindBy (id ="signin_email")
+private WebElement enterusername;
+
+public WebElement getEnterusername() {
+	return enterusername;
+}  
+ 
+@FindBy (id ="signin_password")
+private WebElement enterpassword;
+
+public WebElement getEnterpassword() {
+	return enterpassword;
+}
+
+@FindBy (id ="signin_submit")
+private WebElement clickloginbutton;
+
+public WebElement getClickloginbutton() {
+	return clickloginbutton;
+}
   
   
   

@@ -3,15 +3,12 @@
 <suite name="Suite1" verbose="1" >
   <test name="Nopackage" >
     <classes>
-       <class name="zoopla.uk.myrunner.MyRunner" />
+       <class name="com.us.testng.Test1" />
+       <class name="com.us.testng.Test2" />
+       <class name="com.us.testng.Test3" />
     </classes>
   </test>
  
-  <test name="Regression1">
-    <classes>
-      <class name="test.sample.ParameterSample"/>
-      <class name="test.sample.ParameterTest"/>
-    </classes>
-  </test>
 </suite>
+
 

@@ -1,8 +1,11 @@
 package zoopla.uk.stepdefination;
 
 import org.openqa.selenium.By;
+
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import cucumber.api.java.en.Given;
@@ -42,14 +45,20 @@ public class LoginStepDefination extends  SuperClass {
 
 	@When("^As a user able to put username and password$")
 	public void as_a_user_able_to_put_username_and_password()  {
-	driver.findElement(By.id("signin_email")).sendKeys("marupon76@gmail.com");
-    driver.findElement(By.id("signin_password")).sendKeys("Rupon123456");	
+	pf = PageFactory.initElements(driver,MasterPagefactory.class);	
+	pf.getEnterusername().sendKeys("marupon76@gmail.com");
+	pf.getEnterpassword().sendKeys("Rupon123456");
+		
+	//driver.findElement(By.id("signin_email")).sendKeys("marupon76@gmail.com");
+    //driver.findElement(By.id("signin_password")).sendKeys("Rupon123456");	
 	  
 	}
 
 	@When("^as a user able to click login button$")
 	public void as_a_user_able_to_click_login_button()  {
-    driver.findElement(By.id("signin_submit")).click();	
+	pf = PageFactory.initElements(driver,MasterPagefactory.class);
+	pf.getClickloginbutton().click();
+	// driver.findElement(By.id("signin_submit")).click();	
 	    
 	}
 

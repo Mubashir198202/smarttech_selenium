@@ -5,7 +5,7 @@
   <version>0.0.1-SNAPSHOT</version>
 <properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.test.skip>true</maven.test.skip>
+		<maven.test.skip>false</maven.test.skip>
 	</properties>
 	<build>
 		<plugins>
@@ -34,7 +34,7 @@
 				<version>3.0.0-M3</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>testing.xml</suiteXmlFile>
+						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
