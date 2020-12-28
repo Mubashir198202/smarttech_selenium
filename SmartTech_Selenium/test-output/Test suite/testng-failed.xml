@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [Test suite]">
+  <test thread-count="4" name="firefox Browser(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.crosstestng.CrossBrowsertest">
+        <methods>
+          <include name="browserTesting"/>
+          <include name="browserSetup"/>
+        </methods>
+      </class> <!-- com.crosstestng.CrossBrowsertest -->
+    </classes>
+  </test> <!-- firefox Browser(failed) -->
+  <test thread-count="4" name="edge Browser(failed)">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="com.crosstestng.CrossBrowsertest">
+        <methods>
+          <include name="browserTesting"/>
+          <include name="browserSetup"/>
+        </methods>
+      </class> <!-- com.crosstestng.CrossBrowsertest -->
+    </classes>
+  </test> <!-- edge Browser(failed) -->
+</suite> <!-- Failed suite [Test suite] -->

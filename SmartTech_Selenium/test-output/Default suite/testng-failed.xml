@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <parameter name="browser" value="param-val-not-found"/>
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.us.testng.Test3">
+      <class name="com.crosstestng.CrossBrowsertest">
         <methods>
-          <include name="testCaseThree"/>
+          <include name="browserTesting"/>
+          <include name="browserSetup"/>
         </methods>
-      </class> <!-- com.us.testng.Test3 -->
+      </class> <!-- com.crosstestng.CrossBrowsertest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

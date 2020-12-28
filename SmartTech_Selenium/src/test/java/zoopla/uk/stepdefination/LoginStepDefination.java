@@ -69,7 +69,7 @@ public class LoginStepDefination extends  SuperClass {
 	}
 
 	@Then("^user able to close the Browser$")
-	public void user_able_to_close_the_Browser() throws Throwable {
+	public void user_able_to_close_the_Browser()  {
 	driver.quit();	
 	    
 	}
